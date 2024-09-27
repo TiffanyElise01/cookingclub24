@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="finalproj.css" type="text/css">
+
+</head>
+<body>
+   <div class="nav" id="myNav">
+      <a href="home.html" class="logo"> <img src="club-logo.png"></a>
+      <div class="header-right">
+        <a href="home.html">Home</a>
+        <a class="active">Recipes</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+  </div>
+
+<div class="main-container">
+  
+
+<section>
+<div class ="recipe-card">
+<h2>5 Ingredient Tomato Soup</h2>
+<img src="tomato-soup.jpg" alt="A bowl of tomato soup with a hand holdng a piece of bread it dunks in.">
+<h3>Ingredients:</h3>
+<ul>
+  <li>Two 28-ounce cans San Marzano tomatoes</li>
+  <li>1 stick (8 tablespoons) salted butter</li>
+  <li>1 yellow onion, peel removed and cut into 4 chunks</li>
+  <li>3–4 cloves smashed garlic</li>
+  <li>1 1/2 teaspoons salt</li>
+</ul><br>
+<h3>Instructions:</h3>
+  <ol type="1">
+    <li><strong>Make the Tomato Soup:</strong> Put the tomatoes, butter, and onion in a large saucepan or Dutch oven. Bring it up to a low bubble, then turn the heat to medium low. Cover partially with a lid; let it simmer for 45 minutes. Stir every 15 minutes or so to prevent scorching on the bottom.</li>
+    <li><strong>Remove Onion Chunks:</strong> Remove the onion pieces using tongs. I leave the garlic in there, but that’s up to you!</li>
+    <li><strong>Blend the Tomato Soup:</strong> Using an immersion blender, blend up the soup until it’s a smooth as you want it. Taste and adjust; you can thin it out with milk, water, broth, cream, whatever you want; I just leave it as-is!</li>
+    <li><strong>Serve:</strong> Serve tomato soup with garlic bread, grilled cheese, croutons, crackers, pesto, whatever you like!</li>
+  </ol>
+</div>
+
+<div class="recipe-card">
+<h2>Simple Green Salad</h2>
+<img src="green-salad.jpg" alt="A bowl of vinagrette dressed various salad greens.">
+<h3>Ingredients:</h3>
+<ul>
+  <li>1/4 cup maple syrup</li>
+  <li>1/4 cup balsamic vinegar</li>
+  <li>1/2 cup olive oil</li>
+  <li>1 teaspoon salt</li>
+  <li>black pepper to taste</li>
+  <li>4 cups spring greens</li>
+  <li>seeds, nuts, or any other crunchies for topping if you want</li>
+</ul>
+<h3>Instructions:</h3>
+  <ol type="1">
+    <li>Shake dressing ingredients up in a jar. Taste and adjust to get it just right for how you like it.</li>
+    <li>Toss a generous amount of spring greens with just a few light drizzles of dressing – you want to get the leaves entirely coated in dressing (but not so much that they get soggy). I often use my hands to gently toss it well without breaking all the greens. Serve immediately.</li>
+  </ol>
+</div>
+
+<div class="recipe-card">
+<h2>Juicy Lucy</h2>
+<img src="juicy-lucy.jpg" alt="A burger with cheese oozing out of the patty is cut in half and held up.">
+<h3>Ingredients:</h3>
+<ul>
+  <li>2 lbs. ground beef</li>
+  <li>2 tablespoons burger seasoning</li>
+  <li>6–12 slices American cheese</li>
+  <li>6 brioche buns</li>
+  <li><strong>Toppings:</strong> Lettuce, tomato, onion, pickles</li>  
+  <li><strong>Sauces:</strong> Ketchup, mustard, mayo</li>
+</ul>
+<h3>Instructions:</h3>
+  <ol type="1">
+    <li>Mix the spices into the ground beef (I just mix by hand). Divide the beef into 6 even sections.</li>
+    <li>Form each section into two thin patties (a smaller top patty, and a larger bottom patty). Place 1-2 folded pieces of cheese on the bottom patty, and place the smaller top patty over it, pinching up the edges to seal.</li>
+    <li>Grill or pan fry for about 5 minutes on medium heat, or until cooked to your desired doneness and cheese is melted. We usually sacrifice one Juicy Lucy and cut into it to test the doneness of both the beef and cheese.</li>
+    <li>Let the Juicy Lucys rest for a minute or two. This is essential, otherwise the cheese will be so hot that it will literally come exploding out all over the place.</li>
+    <li>Serve on buns with your favorite toppings!</li>
+  </ol>
+</div>
+</section>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-right">
+      <button  onClick="darkMode()">Go Dark</button>
+    </div>
+    <div class="footer-icons">
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png"></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="instagram.png"></a></li>
+        <li><a href="https://twitter.com" target="_blank"><img src="twitter.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function () {
+  window.onscroll = function() {myFunction()};
+
+  var nav = document.getElementById("myNav");
+
+  var sticky = nav.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+})
+function darkMode() {
+  document.body.style.background="#2C2C2C";
+  document.querySelectorAll('p, ol, ul').forEach(e=>e.style.color="whitesmoke");
+}
+
+function lightMode() {
+  document.body.style.background="white";
+  document.querySelectorAll('p, ol, ul').forEach(e=>e.style.color="#264653");
+}
+
+ 
+</script>
+
+</body>
+</html> 

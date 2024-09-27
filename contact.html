@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="finalproj.css" type="text/css">
+
+</head>
+<body>
+   <div class="nav" id="myNav">
+      <a href="home.html" class="logo"> <img src="club-logo.png"></a>
+      <div class="header-right">
+        <a href="home.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a class="active">Contact Us</a>
+      </div>
+  </div>
+
+<main>
+  <div class="main-container">
+    <section>
+      <div class="officer-card">
+        <img src="president.png">
+        <div class="content">
+          <h3>John Doe</h3>
+          <p><i>President</i></p>
+          <p>president@cc.com</p>
+        </div>
+      </div>
+
+      <div class="officer-card">
+        <img src="vicepres.png">
+        <div class="content">
+          <h3>John Doe</h3>
+          <p><i>Vice President</i></p>
+          <p>vicepresident@cc.com</p>
+        </div>
+      </div>
+
+      <div class="officer-card">
+        <img src="treasurer.png">
+        <div class="content">
+          <h3>John Doe</h3>
+          <p><i>Treasurer</i></p>
+          <p>treasurer@cc.com</p>
+        </div>
+      </div>
+
+      <div class="officer-card">
+        <img src="secretary.png">
+        <div class="content">
+          <h3>John Doe</h3>
+          <p><i>Secretary</i></p>
+          <p>secretary@cc.com</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-right">
+      <button  onClick="darkMode()">Go Dark</button>
+    </div>
+    <div class="footer-icons">
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png"></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="instagram.png"></a></li>
+        <li><a href="https://twitter.com" target="_blank"><img src="twitter.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function () {
+  window.onscroll = function() {myFunction()};
+
+  var nav = document.getElementById("myNav");
+
+  var sticky = nav.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+})
+
+function darkMode() {
+  document.body.style.background="#2C2C2C";
+  document.querySelectorAll('p, ol, ul').forEach(e=>e.style.color="whitesmoke");
+}
+
+function lightMode() {
+  document.body.style.background="white";
+  document.querySelectorAll('p, ol, ul').forEach(e=>e.style.color="#264653");
+}
+</script>
+
+</body>
+</html> 

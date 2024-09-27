@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Cooking Club</title>
+  <link rel="stylesheet" href="finalproj.css" type="text/css">
+
+</head>
+<body>
+  <div class="nav" id ="myNav">
+      <a href="home.html" class="logo"> <img src="club-logo.png"></a>
+      <div class="header-right">
+        <a class="active">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+  </div>
+<main>
+  <section>
+    <div class="container">
+      <img src="CookingClub.jpg" alt="Group of people gathered around food on counter." style= "width:100%">
+      <div class="home-content">
+        <h1>Welcome!</h1>
+        <p>“Since 1992, the Cooking Club has sought to provide a community for those who view food as an art. All are welcome, regardless of skill or cuisine.</p>
+        <p>In recent years, the club has grown to over a hundred newsletter subscribers and more than 50 regulars at our weekly events.</p>
+        <p>This website contains some of the Cooking Club’s essential content, including contact information and even some of our original recipes. Enjoy!”</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-icons">
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png"></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><img src="instagram.png"></a></li>
+        <li><a href="https://twitter.com" target="_blank"><img src="twitter.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function () {
+  window.onscroll = function() {myFunction()};
+
+  var nav = document.getElementById("myNav");
+
+  var sticky = nav.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+})
+
+</script>
+
+</body>
+</html> 

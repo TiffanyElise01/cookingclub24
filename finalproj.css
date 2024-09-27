@@ -1,0 +1,223 @@
+
+* { margin:0; padding:0;}
+
+body {
+  font-size: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: #2F4F4F;
+}
+p, ul, ol {
+  font-family:"Trebuchet MS", sans-serif;
+}
+h1, h2, h3 {
+  font-family:"Georgia", serif;
+}
+h3 {
+  color: #2A9D8F;
+}
+
+.container {
+  background-image: href("CookingClub.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #2A9D8F;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+
+.container .home-content {
+  bottom: 0;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myNav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.nav {
+  font-family: "Trebuchet MS", sans-serif;
+  overflow: hidden;
+  background-color: #2F4F4F;
+  padding: 10px 10px;
+}
+
+.nav a {
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.nav a.logo {
+  max-width: 100%;
+}
+
+
+.nav a.active {
+  background-color: #E94B35;
+  color: #FFFFFF;
+}
+
+.header-right {
+  float: right;
+  padding: 30px;
+}
+
+
+.sticky{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sticky + .container {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+.header-right {
+  float: none;
+  }
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+button{
+  background-color: #E94B35;
+  color: #FFFFFF;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.footer-container {
+  background-color: #2F4F4F;
+  padding: 10px 10px;
+  text-decoration: none;
+  height: 150px;
+  width: 100%;
+}
+
+.footer-right {
+  float: right;
+  padding:30px;
+  margin-top: 20px;
+}
+
+.footer-icons {
+  justify-content: space-between;
+  padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+  list-style-type: none;
+}
+
+.footer-icons li {
+  display: inline-block;
+}
+
+.recipe-card {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #2A9D8F;
+  padding: 10px;
+  margin: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.recipe-card h2 {
+  color: #E76F51;
+  padding-left: 20px;
+}
+
+.recipe-card img {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  float: left;
+  border-radius: 30px;
+}
+
+.recipe-card h3, ul, ol {
+  padding: 20px ;
+  margin: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.officer-card {
+  position: relative;
+  float: left;
+  width: fit-content;
+  border-radius: 10px;
+  border: 1px solid #2A9D8F;
+  padding: 10px;
+  margin: 10px;
+}
+
+.officer-card img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+.content {
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+}
+
+.main-container: after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ 
